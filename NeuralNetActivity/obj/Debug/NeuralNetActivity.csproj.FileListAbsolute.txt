@@ -1,0 +1,12 @@
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\bin\Debug\NeuralNetActivity.exe.config
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\bin\Debug\NeuralNetActivity.exe
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\bin\Debug\NeuralNetActivity.pdb
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\obj\Debug\NeuralNetActivity.csproj.AssemblyReference.cache
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\obj\Debug\NeuralNetActivity.csproj.SuggestedBindingRedirects.cache
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\obj\Debug\NeuralNetActivity.Form1.resources
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\obj\Debug\NeuralNetActivity.Properties.Resources.resources
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\obj\Debug\NeuralNetActivity.csproj.GenerateResource.cache
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\obj\Debug\NeuralNetActivity.csproj.CoreCompileInputs.cache
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\obj\Debug\NeuralNetActivity.exe
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\obj\Debug\NeuralNetActivity.pdb
+C:\Users\PC\Documents\COLLEGE FILES\3RD YEAR\[CS313] Automata Theory and Formal Languages\Application\NeuralNetActivity\NeuralNetActivity\obj\Debug\NeuralNetActivity.Form2.resources
