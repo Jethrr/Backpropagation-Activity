@@ -13,6 +13,27 @@ namespace NeuralNetActivity
     public partial class Form1 : Form
     {
         NeuralNet nn;
+
+        int[][] truthTable = new int[][]
+{
+                new int[] {0, 0, 0, 0, 0},
+                new int[] {0, 0, 0, 1, 0},
+                new int[] {0, 0, 1, 0, 0},
+                new int[] {0, 0, 1, 1, 0},
+                new int[] {0, 1, 0, 0, 0},
+                new int[] {0, 1, 0, 1, 0},
+                new int[] {0, 1, 1, 0, 0},
+                new int[] {0, 1, 1, 1, 0},
+                new int[] {1, 0, 0, 0, 0},
+                new int[] {1, 0, 0, 1, 0},
+                new int[] {1, 0, 1, 0, 0},
+                new int[] {1, 0, 1, 1, 0},
+                new int[] {1, 1, 0, 0, 0},
+                new int[] {1, 1, 0, 1, 0},
+                new int[] {1, 1, 1, 0, 0},
+                new int[] {1, 1, 1, 1, 1},
+        };
+
         public Form1()
         {
             InitializeComponent();
@@ -25,152 +46,32 @@ namespace NeuralNetActivity
             MessageBox.Show(nn.getNumbers());
         }
 
-        private  void button2_Click(object sender, EventArgs e)
+       
+
+        private void button2_Click(object sender, EventArgs e)
         {
-            //Train
-
-
-            //Form2 progressForm = new Form2();
-            //progressForm.Show();
-
-            for (int i = 0; i < 100; i++)
+            // Train
+            for (int epoch = 0; epoch < 100; epoch++)
             {
-                //await Task.Delay(50);
+                foreach (var row in truthTable)
+                {
+                    
+                    for (int i = 0; i < 4; i++) 
+                    {
+                        nn.setInputs(i, (double)row[i]);
+                    }
 
-                // Row 1
-                nn.setInputs(0, 0.0);
-                nn.setInputs(1, 0.0);
-                nn.setInputs(2, 0.0);
-                nn.setInputs(3, 0.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
+                   
+                    nn.setDesiredOutput(0, (double)row[4]);
 
-                // Row 2
-                nn.setInputs(0, 0.0);
-                nn.setInputs(1, 0.0);
-                nn.setInputs(2, 0.0);
-                nn.setInputs(3, 1.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 3
-                nn.setInputs(0, 0.0);
-                nn.setInputs(1, 0.0);
-                nn.setInputs(2, 1.0);
-                nn.setInputs(3, 0.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 4
-                nn.setInputs(0, 0.0);
-                nn.setInputs(1, 0.0);
-                nn.setInputs(2, 1.0);
-                nn.setInputs(3, 1.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 5
-                nn.setInputs(0, 0.0);
-                nn.setInputs(1, 1.0);
-                nn.setInputs(2, 0.0);
-                nn.setInputs(3, 0.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 6
-                nn.setInputs(0, 0.0);
-                nn.setInputs(1, 1.0);
-                nn.setInputs(2, 0.0);
-                nn.setInputs(3, 1.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 7
-                nn.setInputs(0, 0.0);
-                nn.setInputs(1, 1.0);
-                nn.setInputs(2, 1.0);
-                nn.setInputs(3, 0.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 8
-                nn.setInputs(0, 0.0);
-                nn.setInputs(1, 1.0);
-                nn.setInputs(2, 1.0);
-                nn.setInputs(3, 1.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 9
-                nn.setInputs(0, 1.0);
-                nn.setInputs(1, 0.0);
-                nn.setInputs(2, 0.0);
-                nn.setInputs(3, 0.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 10
-                nn.setInputs(0, 1.0);
-                nn.setInputs(1, 0.0);
-                nn.setInputs(2, 0.0);
-                nn.setInputs(3, 1.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 11
-                nn.setInputs(0, 1.0);
-                nn.setInputs(1, 0.0);
-                nn.setInputs(2, 1.0);
-                nn.setInputs(3, 0.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 12
-                nn.setInputs(0, 1.0);
-                nn.setInputs(1, 0.0);
-                nn.setInputs(2, 1.0);
-                nn.setInputs(3, 1.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 13
-                nn.setInputs(0, 1.0);
-                nn.setInputs(1, 1.0);
-                nn.setInputs(2, 0.0);
-                nn.setInputs(3, 0.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 14
-                nn.setInputs(0, 1.0);
-                nn.setInputs(1, 1.0);
-                nn.setInputs(2, 0.0);
-                nn.setInputs(3, 1.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 15
-                nn.setInputs(0, 1.0);
-                nn.setInputs(1, 1.0);
-                nn.setInputs(2, 1.0);
-                nn.setInputs(3, 0.0);
-                nn.setDesiredOutput(0, 0.0);
-                nn.learn();
-
-                // Row 16 
-                nn.setInputs(0, 1.0);
-                nn.setInputs(1, 1.0);
-                nn.setInputs(2, 1.0);
-                nn.setInputs(3, 1.0);
-                nn.setDesiredOutput(0, 1.0); 
-                nn.learn();
-
-                //progressForm.UpdateProgress(i);
+                  
+                    nn.learn();
+                }
             }
-            //progressForm.Close();
 
             MessageBox.Show("Training Completed!");
         }
+
 
         private void button3_Click(object sender, EventArgs e)
         {
